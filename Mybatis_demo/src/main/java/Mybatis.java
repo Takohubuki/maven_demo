@@ -13,7 +13,6 @@ public class Mybatis {
             sessionFactory = new SqlSessionFactoryBuilder().build(Resources
                     .getResourceAsReader(resource));
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return sessionFactory;
